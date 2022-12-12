@@ -9,7 +9,6 @@ const Login = () => {
     const navigate = useNavigate();
     const [state, dispatch] = useGlobalState()
    
-    
     console.log({ email, password })
 
     const handleEmail = (e) => {
@@ -54,7 +53,6 @@ const Login = () => {
       dispatch({user: 0})
       console.log(state)
       navigate("/")
-      
     }
   
     return (

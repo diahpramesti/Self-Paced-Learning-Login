@@ -8,13 +8,13 @@ const Navigation = () => {
   const [state, dispatch] = useGlobalState()
 
   const handleNavbar = () => {
+    console.log("ini di navbar", state)
     if(state.user===0){
         return (
           <div >
             <Navbar bg="dark" variant="dark">
               <Container>
                 <Nav className="me-auto gap-3">
-                  <Link to="/home">Home </Link>
                   <Link to='/login'>Login</Link> 
                 </Nav>
               </Container>
